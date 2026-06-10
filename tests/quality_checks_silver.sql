@@ -140,8 +140,71 @@ OR sls_sales <= 0 OR sls_quantity <= 0 OR sls_price <= 0
 -- ============================================================
 
 -- Check for unwanted spaces
+-- Expectation: No Result
 SELECT
 	*
 FROM silver.erp_cust_az12
 WHERE cid != TRIM(cid)
 OR gen != TRIM(gen)
+
+-- Identify Out-of-Range Dates
+-- Expectation: No Result
+SELECT
+	cdate
+FROM silver.erp_cust_az12
+WHERE cdate > GETDATE()
+
+-- Standarization & Consistency
+-- Expectation: Male OR Female OR n/a
+SELECT DISTINCT
+	gen
+FROM silver.erp_cust_az12
+
+
+-- ============================================================
+-- Checking 'silver.erp_loc_a101'
+-- ============================================================
+
+-- Check for unwanted spaces
+-- Expectation: No Result
+SELECT
+	cid, cntry
+FROM bronze.erp_loc_a101
+WHERE cid != TRIM(cid)
+OR cntry != TRIM(cntry)
+
+-- Standarization & Consistency
+SELECT DISTINCT
+	cntry
+FROM silver.erp_loc_a101
+
+
+-- ============================================================
+-- Checking 'silver.erp_px_cat_g1v2'
+-- ============================================================
+
+-- Check for unwanted spaces
+-- Expectation: No Result
+SELECT
+	*
+FROM bronze.erp_px_cat_g1v2
+WHERE id != TRIM(id) 
+OR cat != TRIM(cat)
+OR subcat != TRIM(subcat)
+OR maintenace != TRIM(maintenace)
+
+-- Standarization & Consistency
+SELECT DISTINCT
+	cat
+FROM bronze.erp_px_cat_g1v2
+
+SELECT DISTINCT
+	subcat
+FROM bronze.erp_px_cat_g1v2
+
+SELECT DISTINCT
+	maintenace
+FROM bronze.erp_px_cat_g1v2
+
+
+

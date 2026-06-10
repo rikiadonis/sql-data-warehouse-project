@@ -190,19 +190,19 @@ BEGIN
 		INSERT INTO silver.erp_cust_az12(cid, cdate, gen)
 		SELECT
 			CASE
-				WHEN UPPER(SUBSTRING(cid, 1,3)) = 'NAS' -- Remove 'NAS' prefix if present
-					THEN REPLACE(UPPER(SUBSTRING(cid, 4, 2) + '-' + SUBSTRING(cid, 5, LEN(cid))), '-W', '-')
-				ELSE REPLACE(UPPER(SUBSTRING(cid, 1, 2) + '-' + SUBSTRING(cid, 3, LEN(cid))), '-W', '-')
+				WHEN UPPER(TRIM(SUBSTRING(cid, 1, 3))) = 'NAS' -- Remove 'NAS' prefix if present
+				THEN SUBSTRING(cid, 4, LEN(cid))
+				ELSE TRIM(cid) 
 			END cid,
-			CASE 
-				WHEN cdate > GETDATE() THEN NULL -- Set future birthdays to NULL
+			CASE	
+				WHEN cdate > GETDATE() THEN NULL -- Set future birthday to NULL
 				ELSE cdate
 			END cdate,
 			CASE
-				WHEN UPPER(TRIM(gen)) IN ('F', 'FEMALE') THEN 'Female'
-				WHEN UPPER(TRIM(gen)) IN ('M', 'MALE') THEN 'Male'
+				WHEN UPPER(TRIM(gen)) IN ('MALE', 'M') THEN 'Male'
+				WHEN UPPER(TRIM(gen)) IN ('FEMALE', 'F') THEN 'Female'
 				ELSE 'n/a'
-			END gen -- Normalize gender values and handle unknown cases 
+			END gen -- Nprmalize gender values and handle unknown cases
 		FROM bronze.erp_cust_az12
 		SET @end_time = GETDATE()
 		PRINT('>> Load Duration: ' + CAST(DATEDIFF(SECOND, @start_time, @end_time) AS NVARCHAR) + ' seconds <<')
@@ -242,3 +242,4 @@ BEGIN
 	END CATCH
 
 END
+

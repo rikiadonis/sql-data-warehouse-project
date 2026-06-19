@@ -9,5 +9,5 @@ The Gold Layer is the business-level data representation, structured to support 
 
 
 | Column Name  | Data Type | Description                                              |
-|--------------|----------------------------------------------------------------------|
+|--------------|-----------|-----------------------------------------------------------|
 | Customer_key | INT       |                                                          |

@@ -5,7 +5,7 @@ The Gold Layer is the business-level data representation, structured to support 
 #### 1. gold.dim_customers
 
 * **Purpose**: Stores customer details enriched with demographic and geograthic data.
-* **Columns:**
+* **Columns**:
 
 
 | Column Name    | Data Type    | Description                                                                           |
@@ -20,5 +20,10 @@ The Gold Layer is the business-level data representation, structured to support 
 | gender         | NVARCHAR(50) | The gender of customer (e.g., 'Male', 'Female').                                      |
 | birthdate      | DATE         | The date of birth of customer, formatted as YYYY-MM-DD (e.g., '1971-10-06').          |
 | create_date    | DATE         | The date and time when the customer record was created in the system.                 |
+
+
+#### 2. gold.dim_products
+
+* **Purpose**: Stores products details enriched with category, subcategory and maintenace.
 
 

@@ -12,3 +12,10 @@ The Gold Layer is the business-level data representation, structured to support 
 |--------------|-----------|----------------------------------------------------------|
 | customer_key | INT       |                                                          |
 | customer_id  | INT       |                                                          |
+| custome_number  | NVARCHAR(50)       |                                                          |
+| first_name  | NVARCHAR(50)       |                                                          |
+| last_name  | NVARCHAR(50)       |                                                          |
+| country  | NVARCHAR(50)       |                                                          |
+| marital_status  | NVARCHAR(50)       |                                                          |
+| gender  | NVARCHAR(50)       |                                                          |
+| birthdate  | DATE       |                                                          |

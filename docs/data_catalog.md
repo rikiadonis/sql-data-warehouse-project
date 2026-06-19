@@ -1,2 +1,3 @@
 # Data Dictionary for Gold Layer
-linia 1
+Linia 1  
+Linia 2

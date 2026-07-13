@@ -8,6 +8,5 @@ The Gold Layer is the business-level representation, structured to support analy
    * **Columns**:
 
 | Column Name | Data Type | Description |
-_________________________________________
-| Dupa        | Elo       |             |
-_________________________________________
+-----------------------------------------
+| Dupa        | Elo       | dupa        |

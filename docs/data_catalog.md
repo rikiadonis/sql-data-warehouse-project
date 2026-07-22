@@ -34,7 +34,7 @@ The Gold Layer is the business-level data representation, structured to support 
 | product_number | NVARCHAR(50) | A structured alphanumeric code representing the product, often used for categorization or inventory.                            |
 | product_name   | NVARCHAR(50) | Descriptive name of the product, including key details such as type, color, and size.                                           |
 | category_id    | NVARCHAR(50) | A unique identifier for product's category, linking to its high-level classification.                                           |
-| category       | NVARCHAR(50) | The broader clasification of the product (e.g., 'Bikes', 'Components') to group related items.                                  |
+| category       | NVARCHAR(50) | The broader classification of the product (e.g., 'Bikes', 'Components') to group related items.                                 |
 | subcategory    | NVARCHAR(50) | A more detailed classification of the product within the category, such as product type (e.g., 'Mountain Bikes', 'Road Frames').|
 | maintenace     | NVARCHAR(50) | Indicates whether the product requires maintenace (e.g., 'Yes', 'No').                                                          |
 | cost           | INT          | The cost or base price of the product, measured in monetary units                                                               |

@@ -24,8 +24,9 @@ The Gold Layer is business-level representation, structured to support analytica
 
 | Column Name    | Data Type    | Description                                                                                          |
 |----------------|--------------|------------------------------------------------------------------------------------------------------|
-| product_key    | INT          |                              |
+| product_key    | INT          |                        |
 | product_id     | INT          |         |
 | product_number | NVARCHAR(50) |  |
-| product_name   | NVARCHAR(50) |  |
-| category_id    | NVARCHAR(50) |  |
+| product_name   | NVARCHAR(50) |                    |
+| category_id    | NVARCHAR(50) |        |
+| category       | NVARCHAR(50) |       |

@@ -36,7 +36,7 @@ The Gold Layer is the business-level data representation, structured to support 
 | category_id    | NVARCHAR(50) | A unique identifier for product's category, linking to its high-level classification.                                           |
 | category       | NVARCHAR(50) | The broader classification of the product (e.g., 'Bikes', 'Components') to group related items.                                 |
 | subcategory    | NVARCHAR(50) | A more detailed classification of the product within the category, such as product type (e.g., 'Mountain Bikes', 'Road Frames').|
-| maintenace     | NVARCHAR(50) | Indicates whether the product requires maintenace (e.g., 'Yes', 'No').                                                          |
+| maintenace     | NVARCHAR(50) | Indicates whether the product requires maintenance (e.g., 'Yes', 'No').                                                         |
 | cost           | INT          | The cost or base price of the product, measured in monetary units                                                               |
 | line           | NVARCHAR(50) | The specific product line or series to wich the product belongs (e.g., 'Mountain', 'Road').                                     |
 | start_date     | DATE         | The data when product became available for sale or use, sorted in                                                               |

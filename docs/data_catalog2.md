@@ -11,7 +11,7 @@ The Gold Layer is business-level representation, structured to support analytica
 | customer_id     | INT          | Unique numerical identifier assigned to each customer.                                 |      
 | customer_number | NVARCHAR(50) | Alphanumeric identifier representing the customer, used for tracking and referencing.  |
 | first_name      | NVARCHAR(50) | The customer's first name, as recorded in the system.                                  |
-| last_name       | NVARCHAR(50) | The customer's last name or familiy name.                                              |
+| last_name       | NVARCHAR(50) | The customer's last name or family name.                                               |
 | country         | NVARCHAR(50) | The country of residence of customer (e.g., 'Australia').                              |
 | birthdate       | DATE         | The date of birth of customer, formatted YYYY-MM-DD (e.g., '1976-01-01').              |
 | gender          | NVARCHAR(50) | The gender of customer (e.g., 'Male', 'Female').                                       |
@@ -19,14 +19,14 @@ The Gold Layer is business-level representation, structured to support analytica
 | create_date     | DATE         | The data and time when the customer record was created in the system.                  | 
 
 ### 2. gold.dim_products
-* **Purpose**: Provides information about prodicts and their attributes
+* **Purpose**: Provides information about products and their attributes
 * **Columns**:
 
-| Column Name    | Data Type    | Description                                                                                          |
-|----------------|--------------|------------------------------------------------------------------------------------------------------|
-| product_key    | INT          |                        |
-| product_id     | INT          |         |
-| product_number | NVARCHAR(50) |  |
-| product_name   | NVARCHAR(50) |                    |
-| category_id    | NVARCHAR(50) |        |
-| category       | NVARCHAR(50) |       |
+| Column Name    | Data Type    | Description                                                                                              |
+|----------------|--------------|----------------------------------------------------------------------------------------------------------|
+| product_key    | INT          | Surrogate key uniquely identifying each product record in dimension table.                               |
+| product_id     | INT          | Unique numeric identifier assigned to the product for tracking and referencing.                          |
+| product_number | NVARCHAR(50) | Structured unique alphanumeric code representing the product, often used to categorization or inventory. |
+| product_name   | NVARCHAR(50) | Descriptive name of the product, including key details such as type, color, and size.                    |
+| category_id    | NVARCHAR(50) | Alphanumeric code representing product's category, linking to high-level classification.                 |
+| category       | NVARCHAR(50) | The broader classification of product category (e.g., 'Bikes', 'Components') to group related items.     |

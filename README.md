@@ -27,7 +27,7 @@ This repository is an excellent resource for professionals and students looking 
 Everything is for Free!
 
 * <span style="color: blue;"><del>Twój tekst</del></span>
-<span style="color: blue;"><s>Twój tekst</s></span>
+<span style="color: blue;"><s>Twój tekst</_></span>
 ## Project Requirements
 
 ### Building the Data Warehouse (Data Engineering)

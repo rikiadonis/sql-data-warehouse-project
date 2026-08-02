@@ -26,7 +26,14 @@ This repository is an excellent resource for professionals and students looking 
 
 Everything is for Free!
 
-* --dupa--
+* Datasets: Access to project dataset (csv files.)
+* SQL Server Express: Lightweight server for hosting your SQL database.
+* SQL Server Management Studio (SSMS): GUI for managing and interacting with databases.
+* GIT Repository: Set up a GitHub account and repository to manage, version and collaborate on your code efficiently.
+* DrawiIO: Design data architecture, models, flows, and diagrams.
+* Notion: All-in-one tool for project management and organization.
+* Notion Project Steps: Access to All Projects Phases and Tasks.
+ 
 ## Project Requirements
 
 ### Building the Data Warehouse (Data Engineering)

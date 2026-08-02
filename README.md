@@ -26,7 +26,7 @@ This repository is an excellent resource for professionals and students looking 
 
 Everything is for Free!
 
-* github.com/<organization>/<repository>/blob/<commit_SHA>/README.md?plain=1
+* <span style="color: blue;"><del>Twój tekst</del></span>
 ## Project Requirements
 
 ### Building the Data Warehouse (Data Engineering)
@@ -37,7 +37,7 @@ Develop a modern data warehouse using SQL Server to consolidate data sales, enab
 #### Specifications
 - **Data Sources**: Import data from two sources system (ERP and CRM) provided as CSV files.
 - **Data Quality**: Cleanse and resolve data quality issues prior to analysis.
-- **Integration**: Combine both sources into a single, user-friendly data model designed for analtical queries.
+- **Integration**: Combine both sources into a single, user-friendly data model designed for analytical queries.
 - **Scope**: Focus on the latest dataset only; historization of data is not required.
 - **Documentation**: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
 

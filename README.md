@@ -26,7 +26,7 @@ This repository is an excellent resource for professionals and students looking 
 
 Everything is for Free!
 
-* <Datasets>
+* github.com/<organization>/<repository>/blob/<commit_SHA>/README.md?plain=1
 ## Project Requirements
 
 ### Building the Data Warehouse (Data Engineering)

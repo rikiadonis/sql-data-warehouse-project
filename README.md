@@ -26,7 +26,7 @@ This repository is an excellent resource for professionals and students looking 
 
 Everything is for Free!
 
-* __dupa__
+* _dupa_
 ## Project Requirements
 
 ### Building the Data Warehouse (Data Engineering)
